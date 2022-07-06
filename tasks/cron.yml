@@ -3,4 +3,4 @@
     user: ansible
     name: "ansible provision"
     minute: "*/5"
-    job: "/usr/bin/ansible-pull -o -U https://github.com/mvijayraj/ansible_pull.git > /dev/var_log"
+    job: "/usr/bin/ansible-pull -o -U https://github.com/mvijayraj/ansible_pull.git > /home/ansible/log"
