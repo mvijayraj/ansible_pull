@@ -9,5 +9,12 @@
     dest: /etc/sudoers.d/ansible
     owner: root
     group: root
-    mode: 0440 
-   
+    mode: 0440
+- name: copy source_list
+  copy:
+    src: files/sources.list
+    dest: /etc/apt/
+    owner: root
+    group: root
+    mode: 0644
+
